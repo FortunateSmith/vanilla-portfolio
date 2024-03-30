@@ -8,29 +8,140 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
     />
+    <link rel="icon" type="image/x-icon" href="/image_assets/favicon.ico">
     <title>The Fortunate Smith</title>
   </head>
   <body>
     <nav>
       <div id="nav-container">
         <div id="logo-wrapper">
-          <img
+          <a href="index.html"/><img
             id="logo"
             src="./image_assets/Logo.png"
             alt="The Fortunate Smith logo, link to top of page"
-          />
+          ></a>
         </div>
         <div id="menu-wrapper">
           <ul class="menu">
-            <li><a class="menu-item" href="#home"> Home </a></li>
-            <li><a class="menu-item" href="#about"> About Me </a></li>
-            <li><a class="menu-item" href="#skills"> Skills </a></li>
-            <li><a class="menu-item" href="#projects"> Projects </a></li>
-            <li><a class="menu-item" href="#contact">Contact</a></li>
+            <li name="home"><a class="menu-item" name="home" >Home</a></li>
+            <li name="about"><a class="menu-item" name="about">About Me</a></li>
+            <li name="skills"><a class="menu-item" name="skills">Skills</a></li>
+            <li name="projects"><a class="menu-item" name="projects">Project </a></li>
+            <li name="contact"><a class="menu-item" name="contact">Contact</a></li>
           </ul>
+        </div>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </div>
     </nav>
+    <main>
+      <!-- Home Container -->
+      <div class="container" id="home">
+        <div class="section">
+          <div class="col">
+            <div class="text-wrapper">
+              <p class="topline">hi! my name is</p>
+              <h1>Liam Smith</h1>
+              <p class="body-text">
+                I am a <i>Web Developer</i> based in Toronto.<br><br>I am a proponent of a simplified web, using the tools on which it was built: HTML, CSS and JavaScript to build more resilient websites and applications.
+              </p>
+            </div>
+          </div>
+          <div class="col col-right">
+            <div class="image-wrapper">
+              <img src="./image_assets/Headshot-Transparent-BG.png" alt="Liam, smiling at a café in Paris but the background is removed so there is no context">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About Me Container -->
+      <div class="container" id="about">
+        <div class="section">
+          <div class="col">
+            <div class="text-wrapper">
+              <h2>About Me</h2>
+              <p class="body-text" id="text-right">
+                  I have spent until the last several years I have spent my entire adult life exclusively as a professional musiciant. <br><br>I love the outdoors, and am particularly fond of the world of mycelium. I consider myself  humanist and secular dharma practioner with a broad range of interests. <br><br>I aim to merge arts, development and community, strengthening real world networks and contributing to positive social change. <br><br>I believe that technology must improve the lives of average people and be used to flatten society.
+              </p>
+            </div>
+          </div>
+          <div class="col col-right">
+            <div class="image-wrapper">
+              <img id="about-image" src="./image_assets/Fairy-Lake.jpeg" alt="A blue sky with mammatus clouds, reflected in the lake below as vividly as they appear in the sky. The horizon is defined by a thin line of pine and birch trees.">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Skills Container -->
+      <div class="container" id="skills">
+        <div class="section">
+          <div class="col">
+            <div class="text-wrapper">
+              <h2>Skills</h2>
+              <p class="body-text">
+                My technical toolbox includes several languages, libraries, frameworks and databases.<br><br>When possible I like to work with vanilla JavaScript, HTML5, CSS3. <br><br>However, I also have experience with WordPress, React, SASS, SQL, NodeJS, Gatsby, Express, EJS, jQuery, Bootstrap, Axios, Ruby on Rails, PostgreSQL and Git.
+              </p>
+            </div>
+          </div>
+          <div class="col col-right circle">
+            <div class="circle-wrapper">
+              <img class="tech-logos" id="deg0" src="./image_assets/tech_logos/Gatsby_Monogram.png" alt="Gatsby Logo">
+              <img class="tech-logos" id="deg60" src="./image_assets/tech_logos/bootstrap-logo.png" alt="Bootstrap Logo">
+              <img class="tech-logos" id="deg120" src="./image_assets/tech_logos/JavaScript.png" alt="JavaScript Logo">
+              <img class="tech-logos" id="deg180" src="./image_assets/tech_logos/NewHTML5.png" alt="html 5 Logo">
+              <img class="tech-logos" id="deg240" src="./image_assets/tech_logos/React.png" alt="React Logo">
+              <img class="tech-logos" id="deg300" src="./image_assets/tech_logos/Sass.png" alt="Sass Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projects Container -->
+      <div class="container" id="projects">
+        <div class="section">
+          <div class="full-width-section">
+            <h2>Projects</h2>
+            <div class="projects">
+              <!-- OAEA -->
+              <div class="project-wrapper left">
+                <a class="project-links" href="https://ontarioarteducationassociation.org/">
+                  <h3>OAEA</h3>
+                  <div class="image-wrapper project-image"><img src="./image_assets/OAEA.png" alt="Ontario Art Education Association website screenshot"></div>
+                </a>
+                <p class="body-text">Website designed and built using WordPress CMS with additional functional elements added using JS and jQuery.</p>
+              </div>
+              <!-- Milon Backt -->
+              <div class="project-wrapper right">
+                <a class="project-links" href="https://confectionsbymilon-backt.ca/">
+                  <h3>Milon Backt</h3>
+                  <div class="image-wrapper project-image"><img src="./image_assets/MilonBackt.jpeg" alt="Image of homepage for Confections By Milon Backt"></div>
+                </a>
+                <p class="body-text">Custom web storefront for a boutique chocolatier, built on WordPress CMS with Elementor and jQuery.</p>
+              </div>
+            </div>
+            <di class="projects">
+              <!-- Pothos -->
+              <div class="project-wrapper left">
+                <a class="project-links" href="https://studiopothos.com/">
+                  <h3>Studio Pothos</h3>
+                  <div class="image-wrapper project-image"><img src="./image_assets/StudioPothos.jpeg" alt="Image of homepage for StudioPothos"></div>
+                </a>
+                <p class="body-text">E-commerce store built on the Shopify platform with custom features injected using Liquid templating language.</p>
+              </div>
+              <!-- Tool Swap -->
+              <div class="project-wrapper right">
+                <a class="project-links" href="https://github.com/FortunateSmith/ToolSwap">
+                  <h3>Tool Swap</h3>
+                  <div class="image-wrapper project-image"><img src="./image_assets/ToolSwap.jpeg" alt="Screenshot of ToolSwap homepage"></div>
+                </a>
+                <p class="body-text">Web CRUD app for scheduling a neighbourhood tool rental built with Postgres, Express, React, Node.</p>
+              </div>
+          </div>   
+        </div>
+      </div>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>
