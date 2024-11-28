@@ -43,3 +43,12 @@ function toggleClass(e) {
 }
 navToggle.addEventListener("click", toggleHamburger);
 navToggle.addEventListener("click", toggleClass);
+
+// COPYRIGHT UPDATE
+let copyright = document.querySelector('#copyright');
+let date = new Date();
+let thisYear = date.getFullYear();
+
+console.log(copyright);
+
+copyright.innerHTML = `&copy ${thisYear} The Fortunate Smith`

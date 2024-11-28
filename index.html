@@ -27,7 +27,7 @@
             <li name="about"><a class="menu-item" name="about">About Me</a></li>
             <li name="skills"><a class="menu-item" name="skills">Skills</a></li>
             <li name="projects"><a class="menu-item" name="projects">Project </a></li>
-            <li name="contact"><a class="menu-item" name="contact">Contact</a></li>
+            <!-- <li name="contact"><a class="menu-item" name="contact">Contact</a></li> -->
           </ul>
         </div>
         <div class="nav-toggle">
@@ -48,11 +48,15 @@
               <p class="body-text">
                 I am a <i>Web Developer</i> based in Toronto.<br><br>I am a proponent of a simplified web, using the tools on which it was built: HTML, CSS and JavaScript to build more resilient websites and applications.
               </p>
+              <a href="https://resume.creddle.io/resume/axbddmzuru6"><div class="glow-on-hover">Resume</div></a>
             </div>
           </div>
           <div class="col col-right">
             <div class="image-wrapper">
-              <img src="./image_assets/Headshot-Transparent-BG.png" alt="Liam, smiling at a café in Paris but the background is removed so there is no context">
+              <img id="portrait" src="./image_assets/Headshot-Transparent-BG.png" alt="Liam, smiling at a café in Paris but the background is removed so there is no context">
+              <div id="bubble-1"></div>
+              <div id="bubble-2"></div>
+              <div id="bubble-3"></div>
             </div>
           </div>
         </div>
@@ -64,14 +68,18 @@
             <div class="text-wrapper">
               <h2>About Me</h2>
               <p class="body-text" id="text-right">
-                  I have spent until the last several years I have spent my entire adult life exclusively as a professional musiciant. <br><br>I love the outdoors, and am particularly fond of the world of mycelium. I consider myself  humanist and secular dharma practioner with a broad range of interests. <br><br>I aim to merge arts, development and community, strengthening real world networks and contributing to positive social change. <br><br>I believe that technology must improve the lives of average people and be used to flatten society.
+                 I come from a background in music and the performing arts. <br><br>I love the outdoors, and am particularly fond of the world of mycelium. I consider myself  humanist and secular dharma practioner with a broad range of interests. <br><br>I aim to merge arts, development and community, strengthening real world networks and contributing to positive social change. <br><br>I believe that technology must improve the lives of average people and be used to flatten society.
               </p>
             </div>
           </div>
           <div class="col col-right">
-            <div class="image-wrapper">
+            <!-- <div class="image-wrapper">
               <img id="about-image" src="./image_assets/Fairy-Lake.jpeg" alt="A blue sky with mammatus clouds, reflected in the lake below as vividly as they appear in the sky. The horizon is defined by a thin line of pine and birch trees.">
-            </div>
+            </div> -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+              <path class="monkey" fill="#fff" stroke="red" d="M 100 100 L 300 100 L 200 300 z"/>
+            </svg>
           </div>
         </div>
       </div>
@@ -142,6 +150,16 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer-container">
+        <div id="copyright"></div>
+        <div><a id="temp-contact" href="mailto:thefortunatesmith&commat;gmail&period;com">Contact Me</a></div>
+        <div class="thumbnail-wrapper">
+          <img class="social-icons" src="./image_assets/LI-In-Bug.png" alt="LinkedIn">
+          <img class="social-icons" src="./image_assets/github-mark.png" alt="Github">
+        </div>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
