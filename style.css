@@ -6,7 +6,7 @@
 	--main-dark-color: #1b1d1d;
 	--main-dark-opacity-97: #1b1d1df7;
 	--highlight-color: #2cf4ff;
-	--body-off-white: #f8fefc;
+	--body-off-white: #ececec;
 	--hover: #17858b;
 	font-size: 18px;
 }
@@ -519,6 +519,13 @@ h2 {
 		text-align: center;
 		font-size: 3rem;
 		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
+
+h2#projects-headline{
+	@media screen and (max-width:768px) {
+		padding-bottom: 30px;
 	}
 }
 
@@ -535,7 +542,7 @@ h3 {
 
 	@media screen and (max-width: 768px) {
 		text-align: left;
-		font-size: 48px;
+		font-size: 2.2em;
 		margin-bottom: 0;
 		/* width: 100%; */
 	}
@@ -731,6 +738,7 @@ img {
 }
 
 /* TECH LOGOS CIRCLE FOR SKILLS SECTION */
+
 .circle {
 	display: flex;
 	justify-content: center;
@@ -747,6 +755,7 @@ img {
 	@media screen and (max-width: 768px) {
 		width: 90%;
 		height: 500px;
+		padding-bottom: 50px;
 	}
 }
 
@@ -1004,8 +1013,10 @@ svg {
 
 /* CONTACT FORM */
 
+form {
+	max-width: 768px;
+	width: 100%;
 @media screen and (max-width: 768px) {
-	form {
 		width: 90%;
 	}
 }
@@ -1035,27 +1046,40 @@ input#name, input#email {
 
 .message > textarea {
 	height: 300px;
-	width: 500px;
+	/* width: 500px; */
 	border: solid black 1px;
 	border-radius: 6px;
 	padding: 15px;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 	margin-bottom: 10px;
 	font-size: inherit;
 	@media screen and (max-width: 768px) {
-		width: 90%;
+		width: auto;
 	}
 }
 
-.message:active {
+/* .message:active {
 	border-color: var(--highlight-color) !important;
+
+} */
+
+#submit-button-container {
+	display: flex;
+}
+#submit-form {
+	padding: 15px 40px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	background-color: var(--body-off-white);
+	border: solid black 1px;
 }
 
 /* FOOTER */
 
 footer {
 	background: var(--body-off-white);
-	height: 80px;
+	height: 160px;
 	display: flex;
 	flex-grow: 1;
 	justify-content: center;
@@ -1071,6 +1095,7 @@ footer {
 	justify-content: space-between;
 	padding: 0 5%;
 	width: 100%;
+	height: 100%;
 }
 
 #copyright {
@@ -1095,11 +1120,11 @@ footer {
 }
 
 .social-links {
-	width: 70px;
-	height: 70px;
+	width: 80px;
+	height: 80px;
 }
 .social-icons {
-	padding: 20%;
+	padding: 30px 10px;
 	width: 50px;
 	height: 50px;
 }

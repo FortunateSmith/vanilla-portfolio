@@ -4,7 +4,7 @@ let menuItems = document.querySelectorAll(".menu li");
 let containers = document.querySelectorAll(".container");
 
 // ADD ACTIVE CLASS TO SELECTED MENU ITEM -> REMOVE FROM ANY OTHERS THAT CURRENTLY HAVE CLASS
-menuItems.forEach((item) => {
+function addActiveClass () { menuItems.forEach((item) => {
   item.addEventListener("click", () => {
     // this removes class 'active' from all items, including clicked item
     menuItems.forEach((unclickedItem) => {
@@ -14,6 +14,7 @@ menuItems.forEach((item) => {
     item.className += "active";
   });
 });
+}
 
 // SCROLL TO CONTAINER
 menuItems.forEach((item) => {
@@ -23,6 +24,7 @@ menuItems.forEach((item) => {
         container.scrollIntoView({ behavior: "smooth", block: "start" });
         //remove show class to hide slide in menu
         menu.classList.remove("show")
+        addActiveClass();
       }
     });
   });

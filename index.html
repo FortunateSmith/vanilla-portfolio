@@ -27,7 +27,7 @@
             <li name="about"><a class="menu-item" name="about">About Me</a></li>
             <li name="skills"><a class="menu-item" name="skills">Skills</a></li>
             <li name="projects"><a class="menu-item" name="projects">Project </a></li>
-            <!-- <li name="contact"><a class="menu-item" name="contact">Contact</a></li> -->
+            <li name="contact"><a href="http://localhost:5500/contact.html" class="menu-item" name="contact">Contact</a></li>
           </ul>
         </div>
         <div class="nav-toggle">
@@ -121,7 +121,7 @@
       <div class="container" id="projects">
         <div class="section">
           <div class="full-width-section">
-            <h2>Projects</h2>
+            <h2 id="projects-headline">Projects</h2>
             <div class="projects">
               <!-- OAEA -->
               <div class="project-wrapper left">
@@ -161,7 +161,7 @@
         </div>
       </div>
       <div class="container" id="contact">
-        <form action="post">
+        <form method="post" action="https://formsubit.co/thefortunatesmith@gmail.com">
           <div id="identity">
           <div>
             <label for="name">Your Name:</label>
@@ -176,7 +176,9 @@
             <label for="subject">Your Message:</label>
             <textarea id="subject" name="subject" placeholder="How can I help?" ></textarea>
           </div>
-          <input type="submit" value="Submit">
+          <div id="submit-button-container">
+          <input id="submit-form" type="submit" value="Send">
+        </div>
         </form>
       </div>
 
@@ -185,7 +187,7 @@
     <footer>
       <div class="footer-container">
         <div id="copyright"></div>
-        <div><a id="temp-contact" href="mailto:thefortunatesmith&commat;gmail&period;com">Contact Me</a></div>
+        
         <div class="thumbnail-wrapper">
           <a class="social-links"href="https://www.linkedin.com/in/liam-s-smith/" alt="Link to LinkedIn profile">
           <img class="social-icons" src="./image_assets/LI-In-Bug.png" alt="LinkedIn">

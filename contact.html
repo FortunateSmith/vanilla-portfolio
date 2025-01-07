@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+		/>
+		<link rel="icon" type="image/x-icon" href="/image_assets/favicon.ico" />
+		<title>The Fortunate Smith - Contact</title>
+	</head>
+    <body>
+        <nav>
+            <div id="nav-container">
+              <div id="logo-wrapper">
+                <a href="index.html"/><img
+                  id="logo"
+                  src="./image_assets/Logo.png"
+                  alt="The Fortunate Smith logo, link to top of page"
+                ></a>
+              </div>
+              <div id="menu-wrapper">
+                <ul class="menu">
+                  <li name="home"><a href="http://localhost:5500/" class="menu-item" name="home" >Home</a></li>
+                  <li name="about"><a href="http://localhost:5500/#about" class="menu-item" name="about">About Me</a></li>
+                  <li name="skills"><a href="http://localhost:5500/#skills" class="menu-item" name="skills">Skills</a></li>
+                  <li name="projects"><a href="http://localhost:5500/#projects" class="menu-item" name="projects">Project </a></li>
+                  <li name="contact" class="active"><a href="http://localhost:5500/contact.html" class="menu-item" name="contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </nav>
+          <main>
+        <div class="container" id="contact">
+            <form method="post" action="https://formsubmit.co/a894edc2dc04a3e632352584951d4c25" method="POST"">
+              <div id="identity">
+              <div>
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" autocomplete="name" id="name" required>
+              </div>
+              <div>
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" autocomplete="email" id="email" required>
+              </div>
+            </div>
+              <div class="message">
+                <label for="subject">Your Message:</label>
+                <textarea id="subject" name="subject" placeholder="How can I help?" ></textarea>
+              </div>
+              <div id="submit-button-container">
+              <input id="submit-form" type="submit" value="Send">
+            </div>
+            </form>
+          </div>
+          </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+              <div id="copyright"></div>  
+              <div class="thumbnail-wrapper">
+                <a class="social-links"href="https://www.linkedin.com/in/liam-s-smith/" alt="Link to LinkedIn profile">
+                <img class="social-icons" src="./image_assets/LI-In-Bug.png" alt="LinkedIn">
+                </a>
+                <a class="social-links"href="https://github.com/FortunateSmith/" alt="link to github">
+                <img class="social-icons" src="./image_assets/github-mark.png" alt="Github">
+              </a>
+              </div>
+            </div>
+          </footer>
+          <script src="./index.js"></script>
+    </body>
+
+</html>
