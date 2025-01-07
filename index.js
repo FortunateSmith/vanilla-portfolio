@@ -44,6 +44,16 @@ function toggleClass(e) {
 navToggle.addEventListener("click", toggleHamburger);
 navToggle.addEventListener("click", toggleClass);
 
+
+window.onscroll = function(){
+  rotateElement();
+}
+
+function rotateElement(){
+  let rotationalAxis = document.querySelector("#bubble-4");
+  rotationalAxis.style.transform = `rotate(-${window.scrollY /6}deg)`;
+}
+
 // COPYRIGHT UPDATE
 let copyright = document.querySelector('#copyright');
 let date = new Date();

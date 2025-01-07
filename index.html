@@ -44,19 +44,26 @@
           <div class="col">
             <div class="text-wrapper">
               <p class="topline">hi! my name is</p>
-              <h1>Liam Smith</h1>
+              <h1>Liam</h1>
               <p class="body-text">
-                I am a <i>Web Developer</i> based in Toronto.<br><br>I am a proponent of a simplified web, using the tools on which it was built: HTML, CSS and JavaScript to build more resilient websites and applications.
+                I am a Web Developer based in Toronto.<br><br>I can help you bring websites and applications from ideas to reality.
               </p>
-              <a href="https://resume.creddle.io/resume/axbddmzuru6"><div class="glow-on-hover">Resume</div></a>
+              <a id="resume-button" href="https://liam-smith-resume.tiiny.site/"><div class="glow-on-hover">Resume</div></a>
             </div>
           </div>
-          <div class="col col-right">
+          <div class="col col-right" id="portrait-wrap">
             <div class="image-wrapper">
               <img id="portrait" src="./image_assets/Headshot-Transparent-BG.png" alt="Liam, smiling at a café in Paris but the background is removed so there is no context">
-              <div id="bubble-1"></div>
-              <div id="bubble-2"></div>
-              <div id="bubble-3"></div>
+              <div id="bubble-1">
+                <div id="bubble-2"></div>
+                <div id="bubble-3"></div>
+                <div id="bubble-4">
+                  <div id="bubble-5">
+                    <div id="bubble-6">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -64,7 +71,7 @@
       <!-- About Me Container -->
       <div class="container" id="about">
         <div class="section">
-          <div class="col">
+          <div class="col reversed">
             <div class="text-wrapper">
               <h2>About Me</h2>
               <p class="body-text" id="text-right">
@@ -73,12 +80,16 @@
             </div>
           </div>
           <div class="col col-right">
-            <!-- <div class="image-wrapper">
+            <div class="image-wrapper">
               <img id="about-image" src="./image_assets/Fairy-Lake.jpeg" alt="A blue sky with mammatus clouds, reflected in the lake below as vividly as they appear in the sky. The horizon is defined by a thin line of pine and birch trees.">
-            </div> -->
+            </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
               <path class="monkey" fill="#fff" stroke="red" d="M 100 100 L 300 100 L 200 300 z"/>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 350 350">
+              <path class="monkey" fill="#fff" stroke="red" d="M 100 100 L 300 100 L 200 300 z"/> -->
             </svg>
           </div>
         </div>
@@ -149,14 +160,39 @@
           </div>   
         </div>
       </div>
+      <div class="container" id="contact">
+        <form action="post">
+          <div id="identity">
+          <div>
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" autocomplete="name" id="name" required>
+          </div>
+          <div>
+            <label for="email">Your Email:</label>
+            <input type="email" name="email" autocomplete="email" id="email" required>
+          </div>
+        </div>
+          <div class="message">
+            <label for="subject">Your Message:</label>
+            <textarea id="subject" name="subject" placeholder="How can I help?" ></textarea>
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      </div>
     </main>
     <footer>
       <div class="footer-container">
         <div id="copyright"></div>
         <div><a id="temp-contact" href="mailto:thefortunatesmith&commat;gmail&period;com">Contact Me</a></div>
         <div class="thumbnail-wrapper">
+          <a class="social-links"href="https://www.linkedin.com/in/liam-s-smith/" alt="Link to LinkedIn profile">
           <img class="social-icons" src="./image_assets/LI-In-Bug.png" alt="LinkedIn">
+          </a>
+          <a class="social-links"href="https://github.com/FortunateSmith/" alt="link to github">
           <img class="social-icons" src="./image_assets/github-mark.png" alt="Github">
+        </a>
         </div>
       </div>
     </footer>
