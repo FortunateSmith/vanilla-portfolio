@@ -13,8 +13,13 @@
 
 /* *{scroll-behavior: smooth;} */
 html {
+	box-sizing: border-box;
 	font-family: "Raleway", sans-serif;
 }
+
+*, *:before, *:after {
+	box-sizing: inherit;
+  }
 
 @media only screen and (max-width: 768px) {
 	html,
@@ -57,7 +62,7 @@ nav {
 	/* transition: 0.5s; */
 	width: 100vw;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		height: 140px;
 	}
 }
@@ -70,7 +75,7 @@ nav {
 	height: 100%;
 	max-width: 1600px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		width: 100%;
 		padding-right: 10%;
 		padding-left: 5%;
@@ -87,7 +92,7 @@ img#logo {
 	/* width: 120px; */
 	cursor: pointer;
 	padding-top: 0;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		width: 100%;
 		height: auto;
 	}
@@ -98,7 +103,7 @@ img#logo {
 	display: flex;
 	align-items: center;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		margin-bottom: -140px;
 	}
 }
@@ -111,7 +116,7 @@ img#logo {
 	height: 77px;
 	list-style: none;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		flex-direction: column;
 		height: 100vh;
 		width: 100vw;
@@ -129,7 +134,7 @@ img#logo {
 }
 
 .show {
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		transform: translateX(-30%);
 		transition: transform 0.3s ease-in-out;
 	}
@@ -145,7 +150,7 @@ img#logo {
 	justify-content: center;
 	align-items: center;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		font-size: 1.4em;
 	}
 }
@@ -179,7 +184,7 @@ a.menu-item {
 .nav-toggle {
 	display: none;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -1034,14 +1039,17 @@ form {
 
 label {
 	font-size: 18px;
+	padding-left: 15px;
+	padding-bottom: 4px;
 }
 
 input#name, input#email {
 	height: 30px;
 	border: solid black 1px;
 	border-radius: 4px;
-	padding: 5px;
+	padding: 5px 10px;
 	font-size: 18px;
+	background: var(--body-off-white);
 }
 
 .message > textarea {
@@ -1049,10 +1057,12 @@ input#name, input#email {
 	/* width: 500px; */
 	border: solid black 1px;
 	border-radius: 6px;
-	padding: 15px;
+	padding: 10px;
 	/* margin-top: 10px; */
 	margin-bottom: 10px;
 	font-size: inherit;
+	background: var(--body-off-white);
+
 	@media screen and (max-width: 768px) {
 		width: auto;
 	}
@@ -1065,14 +1075,24 @@ input#name, input#email {
 
 #submit-button-container {
 	display: flex;
+	margin-top: 20px;
 }
+
+
 #submit-form {
 	padding: 15px 40px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 5px;
-	background-color: var(--body-off-white);
-	border: solid black 1px;
+	background-color: var(--highlight-color);
+	color: var(--main-dark-color);
+	border: solid var(--hover) 2px;
+	font-size: inherit;
+}
+
+#submit-form:hover {
+	background-color: var(--header-light-color);
+	border-color: var(--highlight-color);
 }
 
 /* FOOTER */
